@@ -14,22 +14,39 @@ int main() {
     const int HEIGHT = 1224;
 
     sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "2048", sf::Style::Close | sf::Style::Titlebar);
-    
+
+    Grid grid(WIDTH, HEIGHT);
+
+    grid.spawnRandomCell();
+    grid.spawnRandomCell();
+
     while (window.isOpen())
     {
         sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
+        while (window.pollEvent(event)) {
+            switch (event.type) {
+                // window closed
+                case sf::Event::Closed:
+                    window.close();
+                    break;
+                // key pressed
+                case sf::Event::KeyPressed:
+                    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+                        grid.moveLeft();
+                    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+                        grid.moveRight();
+                    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+                        grid.moveUp();
+                    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+                        grid.moveDown();
+                    }
+                    break;
+                default:
+                    break;
+            }
         }
 
         window.clear(sf::Color::White);
-
-        Grid grid(WIDTH, HEIGHT);
-
-        grid.setCell(0, 0, 16);
-        grid.setCell(2, 3, 1024);
 
         grid.draw(window);
 

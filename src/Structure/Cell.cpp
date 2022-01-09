@@ -1,4 +1,4 @@
-// C++ Includes:
+// Standard Library Includes:
 #include <math.h> 
 #include <string> 
 
@@ -9,6 +9,8 @@
 
 // 2048 Includes
 #include "Structure/Cell.hpp"
+
+int Cell::cell_size = 0;
 
 Cell::Cell(int x_pos, int y_pos, int value) {
     m_value = value;
@@ -26,7 +28,7 @@ Cell::Cell(int x_pos, int y_pos, int value) {
     s.setPosition(x_pos, y_pos);
 
     if (m_value > 0) {
-        s.setColor(sf::Color(150 - (log2(m_value) * 10), 150 - (log2(m_value) * 10), 255, 50 + log2(m_value) * 15));
+        s.setColor(sf::Color(200 - (log2(m_value) * 10), 200 - (log2(m_value) * 10), 255, 25 + log2(m_value) * 22));
     } else {
         s.setColor(sf::Color(170, 170, 170));
     }

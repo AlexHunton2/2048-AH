@@ -5,9 +5,9 @@ set(SOURCE
     src/Structure/Grid.cpp
     src/Structure/Cell.cpp
 )
-add_executable(2048-AH.exe ${SOURCE} "src/main.cpp")
-target_include_directories(2048-AH.exe PUBLIC "external/SFML-2.5.1/include")
-target_include_directories(2048-AH.exe PUBLIC "include")
-target_link_libraries(2048-AH.exe sfml-graphics)
-target_link_libraries(2048-AH.exe sfml-window)
-target_link_libraries(2048-AH.exe sfml-system)
+add_executable(2048-AH ${SOURCE} "src/main.cpp")
+target_include_directories(2048-AH PUBLIC "external/SFML-2.5.1/include")
+target_include_directories(2048-AH PUBLIC "include")
+target_link_libraries(2048-AH sfml-graphics)
+target_link_libraries(2048-AH sfml-window)
+target_link_libraries(2048-AH sfml-system)

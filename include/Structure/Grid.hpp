@@ -14,7 +14,38 @@ class Grid {
         float y_pos;
         int** m_board;
 
+        int m_screen_width;
+        int m_screen_height;
+
+        static int m_score;
+
+        /**
+         * @brief Rotates the m_board by counterclockwise 90 degrees
+         * 
+         * @param repeat The amount of times to repeat the 90 turn
+         */
+        void rotateBy90(int repeat);
+        
+        /**
+         * @brief Shifts m_board to left most-left
+         */
+        void shiftLeft();
+
+        /**
+         * @brief Merges cells together to the left most block
+         */
+        void mergeLeft();
+
+        /**
+         * @brief Base move class, called by all the movements 
+         * 
+         * @param _r first rotation
+         * @param __r second rotation
+         */
+        void move(int _r, int __r);
     public: 
+        static const int row_size = 4;
+
         /**
          * @brief Construct a new Grid object
          * 
@@ -48,4 +79,25 @@ class Grid {
          * @param value the value of the new cell
          */
         void setCell(int row, int col, int value);
+
+        /**
+         * @brief Spawns a random cell with either a value of 2 or 4 in a random location
+         * 
+         */
+        void spawnRandomCell();
+
+        /**
+         * @brief Compares the given board with the member board
+         * 
+         * @param other_board The board to be compared
+         */
+        bool isBoardEqual(int** other_board);
+
+        /**
+        * @brief Edits the m_board so that all non-zero values move the given moment
+        */
+        void moveLeft();
+        void moveRight();
+        void moveUp();
+        void moveDown();
 };

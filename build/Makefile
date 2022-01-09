@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named 2048-AH.exe
+# Target rules for targets named 2048-AH
 
 # Build rule for target.
-2048-AH.exe: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2048-AH.exe
-.PHONY : 2048-AH.exe
+2048-AH: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 2048-AH
+.PHONY : 2048-AH
 
 # fast build rule for target.
-2048-AH.exe/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/build
-.PHONY : 2048-AH.exe/fast
+2048-AH/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/build
+.PHONY : 2048-AH/fast
 
 #=============================================================================
 # Target rules for targets named sfml-system
@@ -244,7 +244,7 @@ src/Structure/Cell.o: src/Structure/Cell.cpp.o
 
 # target to build an object file
 src/Structure/Cell.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/Structure/Cell.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/Structure/Cell.cpp.o
 .PHONY : src/Structure/Cell.cpp.o
 
 src/Structure/Cell.i: src/Structure/Cell.cpp.i
@@ -252,7 +252,7 @@ src/Structure/Cell.i: src/Structure/Cell.cpp.i
 
 # target to preprocess a source file
 src/Structure/Cell.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/Structure/Cell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/Structure/Cell.cpp.i
 .PHONY : src/Structure/Cell.cpp.i
 
 src/Structure/Cell.s: src/Structure/Cell.cpp.s
@@ -260,7 +260,7 @@ src/Structure/Cell.s: src/Structure/Cell.cpp.s
 
 # target to generate assembly for a file
 src/Structure/Cell.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/Structure/Cell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/Structure/Cell.cpp.s
 .PHONY : src/Structure/Cell.cpp.s
 
 src/Structure/Grid.o: src/Structure/Grid.cpp.o
@@ -268,7 +268,7 @@ src/Structure/Grid.o: src/Structure/Grid.cpp.o
 
 # target to build an object file
 src/Structure/Grid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/Structure/Grid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/Structure/Grid.cpp.o
 .PHONY : src/Structure/Grid.cpp.o
 
 src/Structure/Grid.i: src/Structure/Grid.cpp.i
@@ -276,7 +276,7 @@ src/Structure/Grid.i: src/Structure/Grid.cpp.i
 
 # target to preprocess a source file
 src/Structure/Grid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/Structure/Grid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/Structure/Grid.cpp.i
 .PHONY : src/Structure/Grid.cpp.i
 
 src/Structure/Grid.s: src/Structure/Grid.cpp.s
@@ -284,7 +284,7 @@ src/Structure/Grid.s: src/Structure/Grid.cpp.s
 
 # target to generate assembly for a file
 src/Structure/Grid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/Structure/Grid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/Structure/Grid.cpp.s
 .PHONY : src/Structure/Grid.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -292,7 +292,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -300,7 +300,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -308,7 +308,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -323,7 +323,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... 2048-AH.exe"
+	@echo "... 2048-AH"
 	@echo "... sfml-audio"
 	@echo "... sfml-graphics"
 	@echo "... sfml-network"

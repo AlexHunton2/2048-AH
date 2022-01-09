@@ -1,4 +1,4 @@
-CMakeFiles/2048-AH.exe.dir/src/Structure/Grid.cpp.o: \
+CMakeFiles/2048-AH.dir/src/Structure/Grid.cpp.o: \
   /Users/alexh/Documents/Github/2048-AH/src/Structure/Grid.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /Users/alexh/Documents/Github/2048-AH/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/2048-AH.exe.dir/all
+all: CMakeFiles/2048-AH.dir/all
 all: external/SFML-2.5.1/all
 .PHONY : all
 
@@ -72,7 +72,7 @@ preinstall: external/SFML-2.5.1/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/2048-AH.exe.dir/clean
+clean: CMakeFiles/2048-AH.dir/clean
 clean: external/SFML-2.5.1/clean
 .PHONY : clean
 
@@ -194,32 +194,32 @@ external/SFML-2.5.1/src/SFML/Window/clean: external/SFML-2.5.1/src/SFML/Window/C
 .PHONY : external/SFML-2.5.1/src/SFML/Window/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/2048-AH.exe.dir
+# Target rules for target CMakeFiles/2048-AH.dir
 
 # All Build rule for target.
-CMakeFiles/2048-AH.exe.dir/all: external/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/all
-CMakeFiles/2048-AH.exe.dir/all: external/SFML-2.5.1/src/SFML/Window/CMakeFiles/sfml-window.dir/all
-CMakeFiles/2048-AH.exe.dir/all: external/SFML-2.5.1/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexh/Documents/Github/2048-AH/build/CMakeFiles --progress-num=1,2,3 "Built target 2048-AH.exe"
-.PHONY : CMakeFiles/2048-AH.exe.dir/all
+CMakeFiles/2048-AH.dir/all: external/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/all
+CMakeFiles/2048-AH.dir/all: external/SFML-2.5.1/src/SFML/Window/CMakeFiles/sfml-window.dir/all
+CMakeFiles/2048-AH.dir/all: external/SFML-2.5.1/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexh/Documents/Github/2048-AH/build/CMakeFiles --progress-num=1,2,3 "Built target 2048-AH"
+.PHONY : CMakeFiles/2048-AH.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/2048-AH.exe.dir/rule: cmake_check_build_system
+CMakeFiles/2048-AH.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexh/Documents/Github/2048-AH/build/CMakeFiles 74
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/2048-AH.exe.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/2048-AH.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexh/Documents/Github/2048-AH/build/CMakeFiles 0
-.PHONY : CMakeFiles/2048-AH.exe.dir/rule
+.PHONY : CMakeFiles/2048-AH.dir/rule
 
 # Convenience name for target.
-2048-AH.exe: CMakeFiles/2048-AH.exe.dir/rule
-.PHONY : 2048-AH.exe
+2048-AH: CMakeFiles/2048-AH.dir/rule
+.PHONY : 2048-AH
 
 # clean rule for target.
-CMakeFiles/2048-AH.exe.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.exe.dir/build.make CMakeFiles/2048-AH.exe.dir/clean
-.PHONY : CMakeFiles/2048-AH.exe.dir/clean
+CMakeFiles/2048-AH.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/2048-AH.dir/build.make CMakeFiles/2048-AH.dir/clean
+.PHONY : CMakeFiles/2048-AH.dir/clean
 
 #=============================================================================
 # Target rules for target external/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir

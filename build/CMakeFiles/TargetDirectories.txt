@@ -1,4 +1,4 @@
-/Users/alexh/Documents/Github/2048-AH/build/CMakeFiles/2048-AH.exe.dir
+/Users/alexh/Documents/Github/2048-AH/build/CMakeFiles/2048-AH.dir
 /Users/alexh/Documents/Github/2048-AH/build/CMakeFiles/edit_cache.dir
 /Users/alexh/Documents/Github/2048-AH/build/CMakeFiles/rebuild_cache.dir
 /Users/alexh/Documents/Github/2048-AH/build/CMakeFiles/list_install_components.dir

@@ -79,7 +79,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/2048-AH.exe.dir/DependInfo.cmake"
+  "CMakeFiles/2048-AH.dir/DependInfo.cmake"
   "external/SFML-2.5.1/src/SFML/System/CMakeFiles/sfml-system.dir/DependInfo.cmake"
   "external/SFML-2.5.1/src/SFML/Window/CMakeFiles/sfml-window.dir/DependInfo.cmake"
   "external/SFML-2.5.1/src/SFML/Network/CMakeFiles/sfml-network.dir/DependInfo.cmake"
