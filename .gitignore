@@ -1,0 +1,11 @@
+# Keeps
+*.keep
+
+# SFML Library 
+**/external
+
+# Build
+**/build
+
+# VSCode
+**/.vscode
